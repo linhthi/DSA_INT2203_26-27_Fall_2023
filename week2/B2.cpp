@@ -39,7 +39,7 @@ public:
         }
         else {
             Node* prevNode = head;
-            for (int i = 0; i < pos; i++) {
+            for (int i = 0; i < pos-1; i++) {
                 prevNode = prevNode->next;
             }
             Node* nextNode = prevNode->next;
@@ -63,7 +63,7 @@ public:
         }
         else {
             Node* prevNode = head;
-            for (int i = 0; i < pos; i++) {
+            for (int i = 0; i < pos-1; i++) {
                 prevNode = prevNode->next;
             }
             prevNode->next = prevNode->next->next;
