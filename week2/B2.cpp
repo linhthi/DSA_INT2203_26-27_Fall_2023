@@ -56,7 +56,7 @@ public:
         }
         else if (pos == n) {
             Node* prevNode = head;
-            while(prevNode->next != NULL) {
+            while(prevNode->next->next != NULL) {
                 prevNode = prevNode->next;
             }
             prevNode->next = NULL;
